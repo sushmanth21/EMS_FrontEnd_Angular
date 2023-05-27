@@ -1,0 +1,20 @@
+<br/>
+<br/>
+<div class="container card col-md-4 mx-auto">
+<h2>Edit Employee No. {{employee.id}}</h2>
+<hr/>
+<form class="form-group">
+    <label>Name:</label>
+    <input type="text" name="name" class="form-control" [(ngModel)]="employee.name"/>
+    <label>Gender:</label>
+    <input type="text" name="gender" class="form-control" [(ngModel)]="employee.gender"/>
+    <label>Age:</label>
+    <input type="text" name="age" class="form-control" [(ngModel)]="employee.age"/>
+    <label>State:</label>
+    <input type="text" name="state" class="form-control" [(ngModel)]="employee.state"/>
+    <br/>
+    <button class="btn btn-warning" (click)="EditEmployee()">Update</button>
+    <button class="btn btn-primary" (click)="CancelEdit()">Cancel</button>
+</form>
+<br/>
+</div>
